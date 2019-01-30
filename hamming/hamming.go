@@ -1,6 +1,8 @@
 package hamming
 
-import ("errors")
+import (
+	"errors"
+)
 
 func Distance(a, b string) (int, error) {
 	// hamming num starts at 0
@@ -18,7 +20,7 @@ func Distance(a, b string) (int, error) {
 		}
 		return hamming, err
 
-	// throw an error -- a & b are different lengths
+		// throw an error -- a & b are different lengths
 	} else {
 		err = errors.New("DNA sequences have uneven length!")
 		return hamming, err
