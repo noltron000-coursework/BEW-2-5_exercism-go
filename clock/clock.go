@@ -5,8 +5,7 @@ import (
 )
 
 type Clock struct {
-	digital string
-	time    int
+	time int
 }
 
 func New(hrs, min int) Clock {
@@ -82,9 +81,3 @@ func (timepiece Clock) String() string {
 
 	return digital
 }
-
-// func CompareClocks() {
-
-// }
-
-// wanted to see solutions to help learning process — this project is *not* complete
