@@ -6,6 +6,10 @@ import (
 	"strings"
 )
 
+// type Planet struct {
+// 	planet string
+// }
+
 func convertUnit(time float64, unit_in string, unit_out string) (float64, error) {
 	unit_in = strings.ToLower(unit_in)
 	unit_out = strings.ToLower(unit_out)
